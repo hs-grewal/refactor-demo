@@ -55,6 +55,12 @@ void barGraph(vector<int> v) {
         return;
     }
     for (unsigned int i = v.at(0); i <= v.at(v.size() - 1); ++i) {
+        unordered_map<int, int> countCheck;
+        countCheck[v] = 1;
+
+        
+                
+            
         for (int j : v) if (j == i) count++;
         // Brevity is the soul of wit.
         // (AKA *I* know what this is doing...)
